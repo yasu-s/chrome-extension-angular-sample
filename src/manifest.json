@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Test",
+  "version": "1.0",
+  "description": "test",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "assets/icon.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "icons" : {
+    "32": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  }
+}
