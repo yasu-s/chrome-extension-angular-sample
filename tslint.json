@@ -93,6 +93,7 @@
     "no-parameter-reassignment": true,
     "no-submodule-imports": false,
     "variable-name": false,
+    "no-implicit-dependencies": false,
     "prettier": [
       true, {
         "printWidth": 140,
