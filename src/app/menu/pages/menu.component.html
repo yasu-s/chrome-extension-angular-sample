@@ -1,7 +1,22 @@
 <mat-tab-group>
-  <mat-tab label="First"> Content 1 </mat-tab>
-  <mat-tab label="Second"> Content 2 </mat-tab>
-  <mat-tab label="Third">
-    <a routerLink="/about">about</a>
+  <mat-tab label="img">
+    <img src="./assets/icon.png">
+  </mat-tab>
+  <mat-tab label="link">
+    <a href="https://github.com/yasu-s/chrome-extension-angular-sample" target="_blank">
+      https://github.com/yasu-s/chrome-extension-angular-sample
+    </a>
+  </mat-tab>
+  <mat-tab label="about">
+    <button mat-raised-button color="primary" routerLink="/about">about</button>
+  </mat-tab>
+  <mat-tab label="ajax">
+    <button mat-raised-button color="accent" (click)="onClick()">ajax</button>
+    <div *ngIf="data">
+      {{ data | json }}
+    </div>
+    <div style="color: red;" *ngIf="err">
+      {{ err | json }}
+    </div>
   </mat-tab>
 </mat-tab-group>

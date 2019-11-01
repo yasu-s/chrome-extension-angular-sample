@@ -7,6 +7,15 @@
     "default_popup": "index.html",
     "default_icon": "assets/icon.png"
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": ["assets/content_script.js"]
+    }
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self'",
   "permissions": [
     "tabs"
   ],
