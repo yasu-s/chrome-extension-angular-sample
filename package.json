@@ -7,7 +7,8 @@
     "build": "ng build",
     "build:prod": "yarn && ng build --prod",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "build:script": "webpack"
   },
   "private": true,
   "dependencies": {
@@ -44,10 +45,13 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "prettier": "^1.18.2",
     "protractor": "~5.4.0",
+    "ts-loader": "^6.2.1",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }

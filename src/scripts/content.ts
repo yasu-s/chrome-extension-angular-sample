@@ -1,5 +1,4 @@
-
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener((request: { type: string; color: string }) => {
   if (request.type !== 'send' || !request.color) {
     return;
   }

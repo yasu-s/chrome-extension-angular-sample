@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "rootDir": "src",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "src/scripts/**/*.ts"
+  ],
+  "files": [
+    "src/scripts/content.ts",
+  ]
+}
