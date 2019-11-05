@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2015",
@@ -8,7 +9,12 @@
     "experimentalDecorators": true
   },
   "include": [
-    "src/scripts/**/*.ts"
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/main.ts",
+    "src/test.ts",
+    "src/**/*.spec.ts"
   ],
   "files": [
     "src/scripts/content.ts",
