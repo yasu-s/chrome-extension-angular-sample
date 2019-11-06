@@ -9,6 +9,7 @@ import { DataService } from '@ng-sample/core/services';
 export class MenuComponent {
   data = null;
   err = null;
+  num = 0;
 
   constructor(private dataService: DataService) {}
 
@@ -25,7 +26,9 @@ export class MenuComponent {
 
   onPostMessage(): void {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-      chrome.tabs.sendMessage(tabs[0].id as number, { type: 'send', color: 'black' });
+      const color = this.num % 2 === 0 ? 'black' : 'yellow';
+      chrome.tabs.sendMessage(tabs[0].id as number, { type: 'send', color });
+      this.num++;
     });
   }
 }

@@ -1,6 +1,7 @@
 module.exports = {
   mode: "production",
   entry: {
+    background: './src/scripts/background.ts',
     content: './src/scripts/content.ts',
   },
   output: {
