@@ -1,16 +1,16 @@
 # chrome-extension-angular-sample
 
-## 概要
+## Overview
 
-* Chrome拡張機能を Angular で作成したサンプルです。
-* ContentScriptについてはWebpackでビルドします。
+* Sample of Chrome extension created with Angular.
+* Build ContentScript with Webpack.
 
-## 実行環境
+## System requirements
 
 * Node.js - 10.x
 * Yarn - 1.17.x
 
-## 使用ライブラリ
+## Used library
 
 * Angular - 8.2.x
 * Angular Material - 8.2.x
@@ -19,27 +19,27 @@
 * Webpack-cli - 3.3.x
 * ts-loader - 6.2.x
 
-## 動作確認
+## Usage
 
-### 1. サンプルのダウンロード
+### 1. Download Sample
 
 ```bash
 git clone git@github.com:yasu-s/chrome-extension-angular-sample.git
 ```
 
-### 2. パッケージインストール
+### 2. Installing packages
 
 ```bash
 cd chrome-extension-angular-sample
 yarn
 ```
 
-### 3. サンプルのビルド
+### 3. Build the sample
 
 ```bash
 yarn build:prod
 ```
 
-### 4. サンプルのインストール
+### 4. Install the sample
 
-* dist/ng-sample フォルダをChrome拡張機能から読み込んでください。
+* Load the dist/ng-sample folder from the Chrome extension.
