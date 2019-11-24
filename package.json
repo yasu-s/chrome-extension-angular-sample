@@ -5,10 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "yarn && ng build --prod && webpack",
+    "build:prod": "yarn && ng build --prod && webpack --config webpack.dev.js",
     "test": "ng test",
     "lint": "ng lint",
-    "build:script": "webpack"
+    "build:script": "webpack --config webpack.dev.js"
   },
   "private": true,
   "dependencies": {
@@ -51,6 +51,7 @@
     "tslint-plugin-prettier": "^2.0.1",
     "typescript": "~3.5.3",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
   }
 }

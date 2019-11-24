@@ -1,5 +1,4 @@
 module.exports = {
-  mode: "production",
   entry: {
     content: './src/scripts/content.ts',
   },
